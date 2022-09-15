@@ -1,0 +1,68 @@
+.projects {
+    margin: 0 0 100px 0;
+    h3 {
+        background: #020c2f;
+        margin: 0;
+        height: 50px;
+        color: white;
+        text-align: center;
+        letter-spacing: 6px;
+    }
+    .project {
+        width: 100%;
+        height: 200px;
+        // background-image: url("../../../../assets/projects/control.jpg");
+        /* background-attachment: fixed; */
+        background-position: center;
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+    }
+    .project:hover {
+        .info-project {
+            visibility: visible;
+        }
+        .btn-view-project {
+            animation: btn-view-project 0.4s forwards;
+            cursor: pointer;
+            background: rgba(2, 12, 47, 0.6);
+            color: white;
+        }
+        .btn-view-project:hover {
+            animation: btn-view-project-hover 1s forwards;
+        }
+    }
+    .info-project {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        visibility: hidden;
+        flex-direction: column;
+        color: white;
+        .btn-view-project {
+            outline: none;
+            border: 1px solid #020c2f;
+            width: 200px;
+            height: 50px;
+            background: rgb(2 12 47 / 10%);
+            color: #020c2f;
+            letter-spacing: 4px;
+        }
+    }
+
+    @keyframes btn-view-project {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes btn-view-project-hover {
+
+    }
+}

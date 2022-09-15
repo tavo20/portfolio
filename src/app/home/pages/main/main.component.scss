@@ -1,0 +1,86 @@
+main {
+    background-color: #020c2f;;
+    height: 70vh;
+    width: 100vw;
+    margin: 0 0 100px 0;
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        figure {
+            margin: 0 0 40px 0;
+            img {
+                width: 100px;
+                border-radius: 50%;
+                height: 100px;
+                object-fit: cover;
+            }
+            img:hover {
+                cursor: pointer;
+                animation: me 1s forwards;
+            }
+    
+    
+        }
+        p {
+            color: #6d6d6d;
+            margin: 4px 0;
+            letter-spacing: 2px;
+        }
+        .name:hover, .position:hover {
+            cursor: pointer;
+            animation: name 1s forwards;
+        }
+        @keyframes me {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        .tecnologies {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 10px;
+            gap: 50px;
+            margin: 35px 0;
+            .tecnology {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img {
+                    width: 30px;
+                    height: 30px;
+                    object-fit: cover;
+                }
+                img:hover {
+                    cursor: pointer;
+                    animation: tecnology 1s forwards;
+                }
+                p {
+                    color: #6d6d6d;
+                    margin: 4px 0;
+                    letter-spacing: 2px;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+    .title-projects {
+        background: #020c2f;
+        margin: 0;
+        color: white;
+        text-align: center;
+        padding: 10px 0 30px 0;
+        letter-spacing: 3px;
+        box-shadow: 0 0 10px 0 #020c2f;
+    }
+}
