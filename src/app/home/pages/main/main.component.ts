@@ -11,20 +11,20 @@ export class MainComponent implements OnInit {
       title : 'Trivia Game',
       description: 'Do you know all capitals of the world?',
       url: 'https://tavo20.github.io/trivia-countries-vue-ssr/',
-      image: '../../../../assets/projects/control.jpg',
+      image: './assets/projects/control.jpg',
     },
     {
       title : 'Sports',
       description: 'Check the match schedules of the biggest leagues in the world',
       url: 'https://tavo20.github.io/trivia-countries-vue-ssr/',
-      image: '../../../../assets/projects/soccer.jpg',
+      image: './assets/projects/soccer.jpg',
 
     },
     {
       title : 'Ecommerce',
       description: 'Buy your favorite products',
       url: 'https://tavo20.github.io/store-angular-challenge/products/products-all',
-      image: '../../../../assets/projects/ecommerce.jpg',
+      image: './assets/projects/ecommerce.jpg',
     }
 
   ]
