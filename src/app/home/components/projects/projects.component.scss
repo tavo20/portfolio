@@ -39,6 +39,21 @@
         visibility: hidden;
         flex-direction: column;
         color: white;
+        .progress-icon {
+            width: 17px;
+            margin: 0 0 0 12px;
+        }
+        .container-use-tec {
+            margin: 0;
+            display: flex;
+            gap: 13px;
+            figure {
+                margin: 0;
+                img {
+                    width: 20px;
+                }
+            }
+        }
         .btn-view-project {
             outline: none;
             border: 1px solid #020c2f;

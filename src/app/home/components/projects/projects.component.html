@@ -1,13 +1,17 @@
 <section>
-
-
-
     <div class="projects">
         <div class="project" *ngFor="let project of projects"
             style="background-image: url({{project.image}})" 
         >
             <div class="info-project" >
-                <h5>{{ project.title }}</h5>
+                <h5>{{ project.title }} <img *ngIf="project.progress" class="progress-icon" src="../../../../assets/icons/settings.png" alt="">   </h5> 
+
+                <div class="container-use-tec">
+                    <figure  *ngFor="let tec of project.tecnologies">
+                        <img [src]="tec" alt="">
+                    </figure>
+                </div>
+
                 <p>{{ project.description }}</p>
                 <a [href]="project.url" target="_blank">
                     <button class="btn-view-project">
