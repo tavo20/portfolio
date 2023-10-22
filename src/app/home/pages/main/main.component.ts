@@ -8,6 +8,20 @@ import { Component, OnInit } from '@angular/core';
 export class MainComponent implements OnInit {
   public projects: Array<any> = [
     {
+      title : 'Encarar',
+      description: 'Play with your friends',
+      url: 'https://encarar-6cf78.web.app/',
+      image: './assets/projects/field.jpeg',
+      tecnologies:[
+        './assets/images/ionic.webp',
+        './assets/images/js.png',
+        './assets/images/nodejs.png',
+        './assets/images/mongo.jpg',
+        './assets/images/firebase.webp',
+      ],
+      progress: false,
+    },
+    {
       title : 'Trivia Game',
       description: 'Do you know all capitals of the world?',
       url: 'https://tavo20.github.io/trivia-countries-vue-ssr/',
@@ -46,7 +60,7 @@ export class MainComponent implements OnInit {
         './assets/images/mongo.jpg',
       ],
       progress: false,
-    }
+    },
 
   ]
   constructor() { }
